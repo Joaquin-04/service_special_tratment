@@ -5,7 +5,10 @@
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='invoice_line_ids']/form//field[@name='price_unit']" position="attributes">
+            <xpath expr="//field[@name='invoice_line_ids']/tree//field[@name='price_unit']" position="after">
+                <field name="price_unit_editable" invisible="True"/>
+            </xpath>
+            <xpath expr="//field[@name='invoice_line_ids']/tree//field[@name='price_unit']" position="attributes">
                 <attribute name="readonly">not price_unit_editable</attribute>
             </xpath>
         </field>

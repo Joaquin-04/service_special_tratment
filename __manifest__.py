@@ -8,7 +8,6 @@
     "maintainer": "",
     'depends': ['sale', 'purchase', 'account'],
     "data": [
-        "security/ir.model.access.csv",
         "views/account_move_line_views.xml",
         "views/purchase_order_line_views.xml",
         "views/sale_order_line_views.xml",
